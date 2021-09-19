@@ -27,6 +27,8 @@ body {
   padding-right: 15px;
   width: auto;
   max-width: 1140px;
+  -webkit-transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .top-bar-wrapper ul {
@@ -395,10 +397,81 @@ button span {
 
 .clients-logo h2 {
   text-align: center;
+  padding: 20px;
+}
+
+.items-contact p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.items-contact ul {
+  list-style: none;
+}
+
+.items-contact ul li {
+  padding: 15px;
+  color: #fff;
+}
+
+.items-right p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.items-right ul {
+  list-style: none;
+}
+
+.items-right ul li {
+  padding: 15px;
+  color: #fff;
+}
+
+.items-center p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.items-center ul {
+  list-style: none;
+}
+
+.items-center ul li {
+  padding: 15px;
+  color: #fff;
+}
+
+.items-subscribe p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.items-subscribe ul {
+  list-style: none;
+}
+
+.items-subscribe ul li {
+  padding: 15px;
+  color: #fff;
 }
 
 .top-footer {
-  background-color: #282c37;
+  background: url(/src/assets/images/footer-background.jpg) rgba(44, 31, 0, 0.9);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
   width: 100%;
   padding: 100px;
 }
@@ -420,5 +493,189 @@ button span {
 .copyright-footer p {
   color: #fff;
   text-align: center;
+}
+
+.login_bar {
+  width: 300px;
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  top: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.login {
+  background: transparent;
+  position: absolute;
+  height: 100%;
+  width: 67%;
+  outline: none;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 50px;
+  vertical-align: middle;
+  z-index: 10;
+  -webkit-transition: transform 0.2s ease-in-out 0s;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out 0s;
+  transition: -webkit-transform 0.2s ease-in-out 0s;
+  transition: transform 0.2s ease-in-out 0s;
+  transition: transform 0.2s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s;
+}
+
+.login_active {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+.subscribe_button:hover {
+  background-color: #222A33;
+  cursor: pointer;
+}
+
+.subscribe_button {
+  background: #171D23;
+  position: absolute;
+  top: -50px;
+  left: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  height: 150px;
+  width: 100px;
+  text-align: center;
+  line-height: 150px;
+  vertical-align: middle;
+  color: white;
+  -webkit-transition: transform 0.5s ease 0s;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.subscribe_button_active {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.subscribing {
+  background: #CDD4DC;
+  height: 100%;
+  width: 300px;
+  z-index: 5;
+  position: absolute;
+  left: -300px;
+  display: inline-block;
+  -webkit-transition: transform 1s ease 0s;
+  -webkit-transition: -webkit-transform 1s ease 0s;
+  transition: -webkit-transform 1s ease 0s;
+  transition: transform 1s ease 0s;
+  transition: transform 1s ease 0s, -webkit-transform 1s ease 0s;
+}
+
+.subscribing_active {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+.thanks {
+  background: transparent;
+  height: 100%;
+  width: 300px;
+  z-index: 5;
+  text-align: left;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 10px;
+  position: absolute;
+  top: 50px;
+  display: inline-block;
+  -webkit-transition: transform 0.5s ease 0s;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.thanks_active {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.outer-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.inner-grid {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.inner-grid img {
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.inner-grid img:hover {
+  width: 110%;
+}
+
+@media screen and (max-width: 800px) {
+  .inner-grid {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner-grid {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.company-list {
+  padding: 20px;
+}
+
+.company-list h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.company-list ul {
+  list-style: none;
+}
+
+.company-list ul li {
+  padding: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.company-list ul li:hover {
+  background: #000046;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#1CB5E0), to(#000046));
+  background: linear-gradient(to left, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

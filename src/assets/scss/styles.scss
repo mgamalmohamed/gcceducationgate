@@ -25,6 +25,7 @@ body {
     padding-right: 15px;
     width: auto;
     max-width: 1140px;
+    transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .top-bar-wrapper ul {
@@ -359,15 +360,90 @@ button span {
 
     & h2 {
         text-align: center;
+        padding: 20px;
     }
 }
 
+.items-contact p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
 
-  .top-footer {
-      background-color: #282c37;
-      width: 100%;
-      padding: 100px;
+.items-contact ul {
+    list-style: none;
+
+
+    & li {
+        padding: 15px;
+        color: #fff;
+    }
+}
+
+.items-right p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.items-right ul {
+        list-style: none;
+
+        & li {
+            padding: 15px;
+            color: #fff;
+    
+        }
+    }
+
+.items-center p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.items-center ul {
+    list-style: none;
+
+    & li {
+        padding: 15px;
+        color: #fff;
+
+    }
+}
+
+.items-subscribe p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.items-subscribe ul {
+    list-style: none;
+
+    & li {
+        padding: 15px;
+        color: #fff;
+
+    }
+
+}
+
+.top-footer {
+    background: url(/src/assets/images/footer-background.jpg) rgba(44, 31, 0, 0.9);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    padding: 100px;
   }
 
 .footer-items {
@@ -385,6 +461,178 @@ button span {
     }
 }
 
+.login_bar {
+    width: 300px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .login {
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 67%;
+    outline: none;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 50px;
+    vertical-align: middle;
+    z-index: 10;
+    -webkit-transition: transform 0.2s ease-in-out 0s;
+       -moz-transition: transform 0.2s ease-in-out 0s;
+         -o-transition: transform 0.2s ease-in-out 0s;
+            transition: transform 0.2s ease-in-out 0s;
+  }
+  
+  .login_active {
+    -webkit-transform: translateX(300px);
+       -moz-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+         -o-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  
+  .subscribe_button:hover{
+    background-color: #222A33;
+    cursor:pointer;
+  }
+  
+  .subscribe_button {
+    background: #171D23;
+    position: absolute;
+    top: -50px;
+    left: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    height: 150px;
+    width: 100px;
+    text-align: center;
+    line-height: 150px;
+    vertical-align: middle; 
+    color: white;
+    -webkit-transition: transform 0.5s ease 0s;
+       -moz-transition: transform 0.5s ease 0s;
+         -o-transition: transform 0.5s ease 0s;
+            transition: transform 0.5s ease 0s;
+  }
+  
+  .subscribe_button_active{
+    -webkit-transform: translateY(50px);
+       -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+         -o-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  
+  .subscribing{
+    background: #CDD4DC;
+    height: 100%;
+    width: 300px;
+    z-index: 5;
+    position: absolute;
+    left:-300px;
+    display: inline-block;
+    -webkit-transition: transform 1s ease 0s ;
+       -moz-transition: transform 1s ease 0s ;
+         -o-transition: transform 1s ease 0s ;
+            transition: transform 1s ease 0s ;
+  }
+  
+  .subscribing_active {
+    -webkit-transform: translateX(300px);
+       -moz-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+         -o-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  
+  .thanks{
+    background: transparent;
+    height: 100%;
+    width: 300px;
+    z-index: 5;
+    text-align: left;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-left: 10px;
+    position: absolute;
+    top:50px;
+    display: inline-block;
+    -webkit-transition: transform 0.5s ease 0s ;
+       -moz-transition: transform 0.5s ease 0s ;
+         -o-transition: transform 0.5s ease 0s ;
+            transition: transform 0.5s ease 0s ;
+  }
+  
+  .thanks_active {
+    -webkit-transform: translateY(-50px);
+       -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+         -o-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
 
+  .outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+ }
+ .inner-grid {
+    flex: 25%;
+    max-width: 30%;
+    padding: 0 4px;
+ }
+ .inner-grid img {
+    width: 100%;
+    padding: 10px;
+    transition: width .5s;
+    &:hover {
+        width: 110%;
+    }
+ }
+ @media screen and (max-width: 800px) {
+    .inner-grid {
+       flex: 50%;
+       max-width: 50%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .inner-grid {
+       flex: 100%;
+       max-width: 100%;
+    }
+ }
+  
 
+.company-list {
+    padding: 20px;
+
+    & h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    & ul {
+        list-style: none;
+        
+        & li {
+            padding: 20px;
+            margin-bottom: 25px;
+            cursor: pointer;
+
+            &:hover {
+                background: #000046;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #fff;
+            }
+        }
+    }
+}
 
