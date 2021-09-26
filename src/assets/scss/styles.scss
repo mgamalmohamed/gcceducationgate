@@ -436,6 +436,7 @@ button span {
 
 }
 
+
 .top-footer {
     background: url(/src/assets/images/footer-background.jpg) rgba(44, 31, 0, 0.9);
     background-position: center center;
@@ -635,4 +636,29 @@ button span {
         }
     }
 }
+
+
+.listing__filter {
+    padding: 20px;
+}
+
+.filter__box {
+    border: #d32323 solid 1px;
+    height: 50px;
+    background: #f9f9f9;
+    background: -moz-linear-gradient(top,#f9f9f9 0%,#fff 100%);
+    background: -webkit-linear-gradient(top,#f9f9f9 0%,#fff 100%);
+    background: linear-gradient(to bottom,#f9f9f9 0%,#fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9',endColorstr='#ffffff',GradientType=0);
+
+    & .row {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 15px;
+       }
+}
+
+
+
 

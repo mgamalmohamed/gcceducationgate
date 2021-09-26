@@ -678,4 +678,28 @@ button span {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
+
+.listing__filter {
+  padding: 20px;
+}
+
+.filter__box {
+  border: #d32323 solid 1px;
+  height: 50px;
+  background: #f9f9f9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#fff));
+  background: linear-gradient(to bottom, #f9f9f9 0%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9',endColorstr='#ffffff',GradientType=0);
+}
+
+.filter__box .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding: 15px;
+}
 /*# sourceMappingURL=styles.css.map */
