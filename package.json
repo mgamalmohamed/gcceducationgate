@@ -1,0 +1,25 @@
+{
+  "name": "gcceducationgate",
+  "version": "1.0.0",
+  "description": "Gcc Education Gate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgamalmohamed/gcceducationgate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgamalmohamed/gcceducationgate/issues"
+  },
+  "homepage": "https://github.com/mgamalmohamed/gcceducationgate#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1",
+    "bootstrap-sass": "^3.4.1",
+    "jquery": "^3.6.0"
+  }
+}
