@@ -908,6 +908,34 @@ button span {
       color: #024900;
     }
   }
+
+  & .programs__content {
+    padding: 15px;
+    & h3 {
+      font-size: 1.2rem;
+      padding: 15px;
+      color: #024900;
+    }
+    & ul {
+      list-style: none;
+
+      & li::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: #1a9d49;
+        display: inline-block;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: static;
+      }
+
+      & li a:hover {
+        color: #1a9d49;
+      }
+    }
+  }
   & .more {
     position: relative;
     padding: 10px 15px;
@@ -1017,3 +1045,5 @@ ul.social-icons {
   position: relative;
   left: -10px;
 }
+
+

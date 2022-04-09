@@ -12923,6 +12923,36 @@ button span {
   color: #024900;
 }
 
+.content-box-m20 .programs__content {
+  padding: 15px;
+}
+
+.content-box-m20 .programs__content h3, .content-box-m20 .programs__content .h3 {
+  font-size: 1.2rem;
+  padding: 15px;
+  color: #024900;
+}
+
+.content-box-m20 .programs__content ul {
+  list-style: none;
+}
+
+.content-box-m20 .programs__content ul li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #1a9d49;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  position: static;
+}
+
+.content-box-m20 .programs__content ul li a:hover {
+  color: #1a9d49;
+}
+
 .content-box-m20 .more {
   position: relative;
   padding: 10px 15px;
