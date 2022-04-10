@@ -1,4 +1,4 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/bootstrap";
 
 * {
   margin: 0;
@@ -111,7 +111,7 @@ body {
 
 .main-menu::after {
   content: " ";
-  background: url(/src/assets/images/header-bg.jpg);
+  background: url(/assets/images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -151,7 +151,7 @@ body {
   align-content: center;
   justify-content: center;
   justify-items: center;
-  background: url(/src/assets/images/sultan-qaboos-un.png) rgba(44, 31, 0, 0.7);
+  background: url(assets/images/sultan-qaboos-un.png) rgba(44, 31, 0, 0.7);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -308,19 +308,19 @@ form.example::after {
 }
 
 .cert-icon::before {
-  content: url(/src/assets/images/icons/cert.png);
+  content: url(/assets/images/icons/cert.png);
   display: table;
   margin-bottom: 10px;
 }
 
 .grade-icon::before {
-  content: url(/src/assets/images/icons/grade.png);
+  content: url(/assets/images/icons/grade.png);
   display: table;
   margin-bottom: 10px;
 }
 
 .schools-icon::before {
-  content: url(/src/assets/images/icons/schools.png);
+  content: url(/assets/images/icons/schools.png);
   display: table;
   margin-bottom: 10px;
 }
@@ -437,7 +437,7 @@ button span {
 }
 
 .top-footer {
-  background: url(/src/assets/images/footer-background.jpg) rgba(44, 31, 0, 0.9);
+  background: url(/assets/images/footer-background.jpg) rgba(44, 31, 0, 0.9);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
