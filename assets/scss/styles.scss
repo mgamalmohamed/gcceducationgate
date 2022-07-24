@@ -31,9 +31,9 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-size: 20px !important;
+  font-size: 1rem !important;
   font-family: "Roboto", sans-serif !important;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: 15px;
 
   &:hover {
@@ -795,7 +795,7 @@ button span {
       max-width: 180px;
       object-fit: cover;
       max-height: 180px;
-      margin: 20px auto;
+      //margin: 20px auto;
       vertical-align: middle;
     }
   }
